@@ -1,0 +1,57 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+.font-bangla{
+    font-family: 'Hind Siliguri', sans-serif;
+}
+
+.faq-container {
+  max-width: 800px;
+  margin: auto;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.faq-item {
+  border-bottom: 1px solid #eee;
+  padding: 15px 0;
+}
+
+.faq-item:last-child {
+  border-bottom: none;
+}
+
+.faq-question {
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  color: #333;
+  list-style: none; /* Hides the default marker */
+}
+
+/* For a custom arrow/plus icon */
+.faq-question::-webkit-details-marker {
+  display: none;
+}
+
+.faq-question::before {
+  content: '+';
+  float: right;
+  font-size: 20px;
+  font-weight: normal;
+  transition: transform 0.3s ease;
+}
+
+details[open] .faq-question::before {
+  content: '-';
+}
+
+.faq-answer {
+  padding-left: 20px;
+  color: #666;
+  line-height: 1.6;
+  font-size: 14px;
+}
